@@ -1,175 +1,1174 @@
-# DayamaOkey — Yasal Metinler
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dayama Okey - Gizlilik Politikası, Kullanım Koşulları ve Sorumlu Oyun. KVKK ve GDPR uyumlu.">
+<meta name="robots" content="index, follow">
+<title>Dayama Okey — Yasal Metinler / Legal Documents</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-**Son güncelleme:** 26 Haziran 2026
+:root {
+  --primary: #1e40af;
+  --primary-dark: #1e3a8a;
+  --primary-light: #3b82f6;
+  --accent: #0ea5e9;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --text-light: #64748b;
+  --bg: #ffffff;
+  --bg-soft: #f8fafc;
+  --bg-muted: #f1f5f9;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --success: #059669;
+  --warning: #d97706;
+  --danger: #dc2626;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+}
 
----
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
-## ⚠️ ÖNEMLİ BİLGİLENDİRME — Ücretsiz ve Kumar İçermeyen Oyun
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg-soft);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-**DayamaOkey ücretsiz bir eğlence oyunudur. Oyunun hiçbir aşamasında gerçek para, sanal çip veya bahis sistemi yoktur. Oyuna girmek için herhangi bir ödeme veya bakiye gerekmez.**
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 0;
+}
 
-Oyunda yalnızca **XP (deneyim puanı)** üzerinden ilerleme ve sıralama sistemi vardır. Oyuncular zaman içinde XP biriktirir, seviye atlar ve global sıralamada yer alır. **Bu sistem yalnızca eğlence amaçlı rekabet sağlar; hiçbir maddi ödül veya para kazancı içermez.**
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
 
-Oyun, Türkiye Cumhuriyeti yasalarına uygun olarak yalnızca eğlence amacıyla geliştirilmiştir. Hiçbir gerçek para işlemi içermez.
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary);
+  text-decoration: none;
+}
 
----
+.brand-icon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  font-size: 14px;
+  box-shadow: var(--shadow-sm);
+}
 
-## 📋 İçindekiler
+.lang-switch {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-muted);
+  padding: 4px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
 
-1. [Gizlilik Politikası](#gizlilik-politikası-kvkk--gdpr)
-2. [Kullanım Koşulları](#kullanım-koşulları)
-3. [Sorumlu Oyun](#sorumlu-oyun)
-4. [Hesap Silme Hakkı](#hesap-silme-hakkı)
-5. [İletişim](#iletişim)
+.lang-btn {
+  padding: 6px 14px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.15s;
+  font-family: inherit;
+}
 
----
+.lang-btn:hover { color: var(--text); }
 
-## Gizlilik Politikası (KVKK & GDPR)
+.lang-btn.active {
+  background: var(--bg);
+  color: var(--primary);
+  box-shadow: var(--shadow-sm);
+}
 
-Bu uygulama, **6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK)** ve AB **Genel Veri Koruma Tüzüğü (GDPR)** kapsamında kişisel verilerinizi işler.
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  padding: 48px 20px 40px;
+  text-align: center;
+}
 
-### 1. Veri Sorumlusu
+.hero-inner { max-width: 800px; margin: 0 auto; }
 
-**Veri sorumlusu:** Dayama Okey Geliştiricisi (bireysel)
-**İletişim:** gamedayama@gmail.com
+.hero h1 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
 
-### 2. İşlenen Kişisel Veriler
+.hero p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 6px;
+}
 
-| Veri Türü | Amaç | Saklama Süresi |
-|---|---|---|
-| Cihaz tanıtıcısı (UUID) | Kullanıcı tanıma, anti-cheat | Hesap silinene kadar |
-| Oyun takma adı (nickname) | Oyun içi kimlik | Hesap silinene kadar |
-| Doğum yılı | 18+ yaş doğrulama (Apple/Google zorunlu) | Hesap silinene kadar |
-| XP (deneyim puanı) ve seviye | Sıralama sistemi | Hesap silinene kadar |
-| Oyun istatistikleri (kazanılan/kaybedilen el) | Profil görüntüleme | Hesap silinene kadar |
-| Avatar tercihi | Görsel kimlik | Hesap silinene kadar |
-| Anonim Firebase UID | Global sıralama (leaderboard) | Hesap silinene kadar |
+.hero-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.15);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-top: 12px;
+  font-weight: 500;
+}
 
-**Toplanmayan veriler:** Gerçek ad, soyad, T.C. kimlik numarası, banka/kart bilgisi, adres, telefon numarası, fotoğraf, konum bilgisi, kişisel rehber, ödeme bilgisi.
+/* Notice */
+.notice {
+  max-width: 900px;
+  margin: -20px auto 0;
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+}
 
-### 3. Veri İşleme Amaçları
+.notice-box {
+  background: white;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--success);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
 
-- Oyun hizmetinin sağlanması (4 oyunculu Türk Okey "Dayama" varyasyonu)
-- Online çok oyunculu eşleşme (Photon PUN 2)
-- Global sıralama tablosu (Firebase Firestore)
-- Anti-cheat ve hile koruması
-- Yasal yükümlülüklerin yerine getirilmesi (KVKK, GDPR, Apple/Google politikaları)
-- Reklam gösterimi ve analizi (Google AdMob — bu konuda ATT/UMP onay sürecinden geçirilir)
+.notice-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: #ecfdf5;
+  color: var(--success);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
 
-### 4. Veri Aktarımı (Yurt İçi ve Yurt Dışı)
+.notice-content h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--text);
+}
 
-- **Photon Engine** (Almanya/AB): Online oyun eşleşmesi için cihaz UUID ve takma ad aktarılır. AB içi aktarım, GDPR uyumlu.
-- **Firebase Firestore** (Avrupa/eur3 region): Global sıralama için anonim UID, takma ad, level ve XP aktarılır. AB içi aktarım, GDPR uyumlu.
-- **Google AdMob** (ABD — Standart Sözleşme Maddeleri / SCC kapsamında): Reklam kişiselleştirmesi için reklam tanımlayıcısı aktarılır. ATT izni vermezseniz veya UMP'de reddederseniz, kişiselleştirilmiş veri aktarılmaz.
-- **Google Firebase Authentication** (AB region): Anonim kimlik doğrulama için UID üretilir.
+.notice-content p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
 
-### 5. Veri Güvenliği
+/* Layout */
+.container {
+  max-width: 1100px;
+  margin: 32px auto 60px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 32px;
+}
 
-- Yerel cihazda saklanan veriler **AES + HMAC** ile şifrelenir (SecurePrefs).
-- Firebase Firestore Security Rules ile yetkisiz erişim engellenir.
-- Photon iletişimi şifrelenmiş kanal üzerinden yapılır.
+/* TOC */
+.toc {
+  position: sticky;
+  top: 80px;
+  align-self: start;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
 
-### 6. Veri Sahibi Hakları (KVKK Madde 11 / GDPR Article 15-22)
+.toc-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-light);
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
 
-Kişisel verilerinize ilişkin şu haklara sahipsiniz:
+.toc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
 
-- **Bilgi alma hakkı:** İşlenen kişisel verileriniz hakkında bilgi talep edebilirsiniz.
-- **Düzeltme hakkı:** Eksik/yanlış verilerin düzeltilmesini isteyebilirsiniz.
-- **Silme hakkı:** Hesabınızı silebilirsiniz (Bkz. [Hesap Silme Hakkı](#hesap-silme-hakkı)).
-- **İşlemeye itiraz hakkı:** gamedayama@gmail.com üzerinden talepte bulunabilirsiniz.
-- **Şikâyet hakkı:** KVKK Kurumu'na (www.kvkk.gov.tr) başvurabilirsiniz.
+.toc-link {
+  display: block;
+  padding: 8px 10px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.15s;
+}
 
-Talepleriniz **en geç 30 gün içinde** ücretsiz olarak yanıtlanır.
+.toc-link:hover {
+  background: var(--bg-muted);
+  color: var(--text);
+}
 
----
+.toc-link.active {
+  background: #dbeafe;
+  color: var(--primary);
+  font-weight: 600;
+}
 
-## Kullanım Koşulları
+/* Content */
+.content {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+}
 
-### 1. Yaş Sınırı
+.section {
+  margin-bottom: 40px;
+  scroll-margin-top: 80px;
+}
 
-Bu uygulama **18 yaş ve üzeri** kullanıcılara yöneliktir. 18 yaşından küçükseniz uygulamayı kullanamazsınız.
+.section:last-child { margin-bottom: 0; }
 
-### 2. Ücretsiz Oyun
+.section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-DayamaOkey tamamen ücretsizdir. Oyuna girmek, oynamak veya online masalara katılmak için **hiçbir ödeme veya bakiye gerekmez**. Herkes istediği zaman oyuna girip çıkabilir.
+.section-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+}
 
-Oyunda:
-- **Çip, jeton veya sanal para sistemi yoktur.**
-- **Bahis veya kumar mekaniği yoktur.**
-- **Para karşılığı satın alınabilecek hiçbir öğe yoktur.**
-- Yalnızca **XP (deneyim puanı)** kazanılır; bu yalnızca sıralama ve seviye göstergesidir.
+.section h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 24px 0 10px;
+}
 
-### 3. Kullanıcı Davranışı
+.section p {
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  font-size: 14.5px;
+}
 
-Kullanıcılar şunlardan kaçınmalıdır:
-- Hile yazılımı, modifiye edilmiş istemci kullanımı
-- Diğer oyunculara hakaret, taciz, kötü davranış
-- Otomatik bot kullanımı
-- Hesap paylaşımı veya satışı
+.section ul, .section ol {
+  margin: 12px 0 12px 24px;
+  color: var(--text-muted);
+  font-size: 14.5px;
+}
 
-İhlal durumunda hesap kalıcı olarak askıya alınabilir.
+.section li { margin-bottom: 6px; }
 
-### 4. Hizmet Değişiklikleri
+.section strong { color: var(--text); font-weight: 600; }
 
-Geliştirici, uygulamayı önceden bildirim yaparak veya yapmayarak güncelleyebilir, değiştirebilir veya hizmeti durdurabilir.
+.section a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
+}
 
-### 5. Sorumluluk Reddi
+.section a:hover { border-bottom-color: var(--primary); }
 
-Uygulama "olduğu gibi" sunulur. Geliştirici, oyunun kesintisiz veya hatasız çalışacağını garanti etmez. Oyunun kullanımından doğacak doğrudan veya dolaylı zararlardan geliştirici sorumlu değildir.
+/* Table */
+.table-wrap {
+  margin: 16px 0;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
 
----
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
 
-## Sorumlu Oyun
+thead {
+  background: var(--bg-muted);
+}
 
-DayamaOkey eğlence amaçlı bir oyundur. Aşağıdaki uyarıları dikkate alın:
+th {
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 700;
+  color: var(--text);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid var(--border);
+}
 
-- **Mola verin:** Uzun süre oyun oynamak göz, boyun ve sırt rahatsızlıklarına yol açabilir. Düzenli ara verin.
-- **Aşırı oynama:** Oyun bağımlılığı ciddi bir sorundur. Hayatınızı olumsuz etkiliyorsa profesyonel destek alın.
-- **Yardım hatları:**
-  - **Yeşilay:** 115 (Türkiye genelinde ücretsiz destek hattı)
-  - **Sağlık Bakanlığı:** 191
-  - **Web:** https://yesilay.org.tr
+td {
+  padding: 12px 14px;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
 
----
+tbody tr:last-child td { border-bottom: none; }
 
-## Hesap Silme Hakkı
+tbody tr:hover { background: var(--bg-soft); }
 
-KVKK Madde 7 ve GDPR Article 17 gereği, hesabınızı tamamen silme hakkına sahipsiniz.
+/* Info Box */
+.info-box {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin: 16px 0;
+}
 
-### Uygulama İçinden Silme
+.info-box.warning {
+  background: #fffbeb;
+  border-color: #fde68a;
+}
 
-1. Ayarlar (⚙️) → **Hesabımı Sil**
-2. Onay → Hesabınız ve tüm verileriniz **anında** silinir:
-   - Yerel profil ve istatistikler
-   - Firebase global sıralama kaydı
-   - Firebase Anonim kimlik (UID)
-   - XP ve seviye bilgileri
+.info-box.warning strong { color: #92400e; }
 
-### Manuel Silme Talebi
+.info-box.success {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+}
 
-Uygulama içi yöntem kullanamıyorsanız:
+.info-box.success strong { color: #065f46; }
 
-**E-posta:** gamedayama@gmail.com
-**Konu:** "Hesap Silme Talebi"
-**İçerik:** Oyun içi takma adınız ve (varsa) cihaz UUID
+.info-box.danger {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
 
-Talepleriniz **en geç 30 gün içinde** işleme alınır.
+.info-box.danger strong { color: #991b1b; }
 
-### Silme Sonrası
+/* Contact Card */
+.contact-card {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border: 1px solid #bfdbfe;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-top: 16px;
+  display: grid;
+  gap: 12px;
+}
 
-- Verileriniz sistemlerimizden kalıcı olarak silinir.
-- Yedeklerden silme **90 gün içinde** tamamlanır (KVKK uyumlu yedek rotasyonu).
-- Silme talebinizden sonra aynı cihazla yeni hesap açabilirsiniz, ancak eski hesabınızla bağlantısı olmaz.
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14.5px;
+}
 
----
+.contact-icon {
+  width: 36px;
+  height: 36px;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-size: 16px;
+  flex-shrink: 0;
+}
 
-## İletişim
+.contact-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-light);
+  margin-bottom: 2px;
+}
 
-Tüm yasal sorular, KVKK talepleri, hesap silme istekleri ve genel destek için:
+.contact-value { color: var(--text); font-weight: 500; }
 
-**E-posta:** gamedayama@gmail.com
-**Yanıt süresi:** 24-72 saat (hafta içi), 30 gün içinde KVKK/GDPR talepleri için resmi yanıt
+/* Footer */
+.footer {
+  background: var(--text);
+  color: white;
+  padding: 40px 20px 32px;
+  text-align: center;
+}
 
----
+.footer-inner { max-width: 800px; margin: 0 auto; }
 
-**Bu metin son olarak 26 Haziran 2026 tarihinde güncellenmiştir.**
+.footer p { margin-bottom: 8px; opacity: 0.9; font-size: 13.5px; }
+
+.footer-brand { font-weight: 700; font-size: 15px; margin-bottom: 12px; }
+
+.footer a { color: #93c5fd; text-decoration: none; }
+
+.footer a:hover { color: white; }
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+/* Language content toggle */
+[data-lang] { display: none; }
+[data-lang].active { display: block; }
+:root.lang-tr [data-lang="tr"] { display: block; }
+:root.lang-en [data-lang="en"] { display: block; }
+
+/* Mobile */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .toc {
+    position: static;
+    max-height: none;
+  }
+
+  .toc-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .toc-link {
+    padding: 6px 12px;
+    font-size: 12px;
+    background: var(--bg-muted);
+  }
+
+  .content { padding: 24px 20px; }
+
+  .hero { padding: 36px 20px 32px; }
+
+  .hero h1 { font-size: 24px; }
+
+  .section h2 { font-size: 18px; }
+
+  .notice { margin-top: -16px; }
+
+  .notice-box { padding: 16px; }
+}
+
+@media (max-width: 500px) {
+  .header-inner { padding: 0 16px; }
+  .brand { font-size: 15px; }
+  .brand-icon { width: 28px; height: 28px; font-size: 12px; }
+  .hero h1 { font-size: 20px; }
+  .hero p { font-size: 14px; }
+  .content { padding: 20px 16px; }
+  .section h2 { font-size: 16px; }
+  .section p, .section ul, .section ol { font-size: 13.5px; }
+  th, td { padding: 10px; font-size: 12.5px; }
+}
+
+/* Print */
+@media print {
+  .header, .toc, .footer, .lang-switch { display: none !important; }
+  .container { grid-template-columns: 1fr; margin: 0; }
+  .content { border: none; padding: 0; box-shadow: none; }
+  .hero { background: white !important; color: black !important; }
+  a { color: black !important; }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-icon">D</span>
+      <span data-lang="tr">Dayama Okey — Yasal</span>
+      <span data-lang="en">Dayama Okey — Legal</span>
+    </a>
+    <div class="lang-switch" role="tablist" aria-label="Language">
+      <button class="lang-btn active" data-set-lang="tr" aria-label="Türkçe">TR</button>
+      <button class="lang-btn" data-set-lang="en" aria-label="English">EN</button>
+    </div>
+  </div>
+</header>
+
+<!-- ========== TÜRKÇE ========== -->
+<div data-lang="tr" class="active">
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <h1>Yasal Metinler</h1>
+    <p>Gizlilik Politikası, Kullanım Koşulları ve Sorumlu Oyun</p>
+    <div class="hero-meta">Son güncelleme: 2 Temmuz 2026</div>
+  </div>
+</section>
+
+<div class="notice">
+  <div class="notice-box">
+    <div class="notice-icon">✓</div>
+    <div class="notice-content">
+      <h3>Ücretsiz ve Kumar İçermeyen Oyun</h3>
+      <p>Dayama Okey ücretsiz bir eğlence oyunudur. Oyunun hiçbir aşamasında gerçek para, sanal çip veya bahis sistemi yoktur. Yalnızca <strong>XP (deneyim puanı)</strong> üzerinden ilerleme ve sıralama vardır — hiçbir maddi ödül veya para kazancı içermez.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <aside class="toc">
+    <div class="toc-title">İçindekiler</div>
+    <ul class="toc-list">
+      <li><a href="#gizlilik" class="toc-link">1. Gizlilik Politikası</a></li>
+      <li><a href="#kullanim" class="toc-link">2. Kullanım Koşulları</a></li>
+      <li><a href="#sorumlu" class="toc-link">3. Sorumlu Oyun</a></li>
+      <li><a href="#silme" class="toc-link">4. Hesap Silme</a></li>
+      <li><a href="#iletisim" class="toc-link">5. İletişim</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+
+    <section class="section" id="gizlilik">
+      <h2><span class="section-number">1</span> Gizlilik Politikası (KVKK & GDPR)</h2>
+      <p>Bu uygulama, <strong>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK)</strong> ve AB <strong>Genel Veri Koruma Tüzüğü (GDPR)</strong> kapsamında kişisel verilerinizi işler.</p>
+
+      <h3>1.1. Veri Sorumlusu</h3>
+      <p><strong>Veri sorumlusu:</strong> Serkan Kaval (bireysel geliştirici)<br>
+      <strong>İletişim:</strong> <a href="mailto:gamedayama@gmail.com">gamedayama@gmail.com</a></p>
+
+      <h3>1.2. İşlenen Kişisel Veriler</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Veri Türü</th><th>Amaç</th><th>Saklama Süresi</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Kullanıcı adı (nickname)</td><td>Oyun içi kimlik, sıralama</td><td>Hesap silinene kadar</td></tr>
+            <tr><td>Avatar seçimi</td><td>Görsel kimlik</td><td>Hesap silinene kadar</td></tr>
+            <tr><td>Doğum ayı ve yılı</td><td>13+ yaş doğrulama (COPPA/KVKK/GDPR)</td><td>Yaş kontrolü sonrası saklanmaz</td></tr>
+            <tr><td>Anonim Firebase UID</td><td>Kullanıcı ayırt etme, leaderboard</td><td>Hesap silinene kadar</td></tr>
+            <tr><td>XP ve seviye</td><td>Sıralama sistemi</td><td>Hesap silinene kadar</td></tr>
+            <tr><td>Oyun istatistikleri</td><td>Profil görüntüleme</td><td>Hesap silinene kadar</td></tr>
+            <tr><td>Reklam kimliği (IDFA/GAID)</td><td>AdMob reklam gösterimi</td><td>ATT/UMP izni ile</td></tr>
+            <tr><td>Çökme ve performans verisi</td><td>Hata takibi, iyileştirme</td><td>90 gün (anonim)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-box success">
+        <strong>Toplanmayan Veriler:</strong> Gerçek ad-soyad, T.C. kimlik numarası, e-posta, telefon numarası, adres, banka/kart bilgisi, fotoğraf, konum, kişisel rehber, sağlık verisi, biyometrik veri.
+      </div>
+
+      <h3>1.3. Veri İşleme Amaçları</h3>
+      <ul>
+        <li>Oyun hizmetinin sağlanması (4 oyunculu Türk Okey "Dayama" varyasyonu)</li>
+        <li>Online çok oyunculu eşleşme (Photon PUN 2)</li>
+        <li>Global sıralama tablosu (Firebase Firestore)</li>
+        <li>Anti-cheat ve hile koruması</li>
+        <li>Küfür/uygunsuz kullanıcı adı filtresi</li>
+        <li>Yasal yükümlülüklerin yerine getirilmesi (KVKK, GDPR, Apple/Google politikaları)</li>
+        <li>Reklam gösterimi ve ölçümü (Google AdMob — ATT/UMP onay sürecinden geçirilir)</li>
+      </ul>
+
+      <h3>1.4. Kullanıcılar Arası İletişim Yoktur</h3>
+      <div class="info-box">
+        Uygulamada <strong>sohbet, mesajlaşma veya kullanıcılar arası doğrudan iletişim yoktur</strong>. Etkileşim yalnızca oyun içi taş hamleleriyle sınırlıdır.
+      </div>
+
+      <h3>1.5. Veri Aktarımı (Yurt İçi ve Yurt Dışı)</h3>
+      <ul>
+        <li><strong>Photon Engine</strong> (Almanya/AB): Online eşleşme için anonim UID ve takma ad aktarılır. AB içi, GDPR uyumlu.</li>
+        <li><strong>Firebase Firestore</strong> (AB region): Sıralama için anonim UID, takma ad, XP aktarılır. GDPR uyumlu.</li>
+        <li><strong>Google AdMob</strong> (ABD — SCC kapsamında): Reklam gösterimi için reklam kimliği. ATT/UMP reddedilirse kişiselleştirilmiş veri aktarılmaz.</li>
+        <li><strong>Firebase Authentication</strong> (AB region): Anonim kimlik doğrulama.</li>
+        <li><strong>Firebase Crashlytics</strong>: Anonim çökme raporları.</li>
+      </ul>
+
+      <h3>1.6. Veri Güvenliği</h3>
+      <ul>
+        <li>Yerel cihazda saklanan veriler <strong>AES + HMAC</strong> ile şifrelenir (SecurePrefs).</li>
+        <li>Firebase Firestore Security Rules ile yetkisiz erişim engellenir.</li>
+        <li>Photon iletişimi şifreli kanal üzerinden yapılır.</li>
+        <li>Tüm ağ trafiği <strong>HTTPS/TLS</strong> ile şifrelenir.</li>
+      </ul>
+
+      <h3>1.7. Veri Sahibi Hakları (KVKK Madde 11 / GDPR Article 15-22)</h3>
+      <p>Kişisel verilerinize ilişkin şu haklara sahipsiniz:</p>
+      <ul>
+        <li><strong>Bilgi alma:</strong> İşlenen verileriniz hakkında bilgi talep edebilirsiniz.</li>
+        <li><strong>Düzeltme:</strong> Eksik/yanlış verilerin düzeltilmesini isteyebilirsiniz.</li>
+        <li><strong>Silme:</strong> Hesabınızı silebilirsiniz (bkz. <a href="#silme">Hesap Silme</a>).</li>
+        <li><strong>İşlemeye itiraz:</strong> gamedayama@gmail.com üzerinden başvurabilirsiniz.</li>
+        <li><strong>Şikâyet:</strong> KVKK Kurumu'na (<a href="https://www.kvkk.gov.tr" target="_blank" rel="noopener">kvkk.gov.tr</a>) başvurabilirsiniz.</li>
+      </ul>
+      <p>Talepleriniz <strong>en geç 30 gün içinde</strong> ücretsiz olarak yanıtlanır.</p>
+    </section>
+
+    <section class="section" id="kullanim">
+      <h2><span class="section-number">2</span> Kullanım Koşulları</h2>
+
+      <h3>2.1. Yaş Sınırı</h3>
+      <div class="info-box warning">
+        Bu uygulama <strong>13 yaş ve üzeri</strong> kullanıcılara yöneliktir. Yaş sınırı, veri koruma mevzuatı (KVKK/COPPA/GDPR) gereğidir. Oyun içeriği tüm yaş grupları için uygundur.
+      </div>
+
+      <h3>2.2. Ücretsiz Oyun — Kumar/Bahis Yok</h3>
+      <p>Dayama Okey tamamen ücretsizdir. Uygulamada:</p>
+      <ul>
+        <li>❌ Uygulama içi satın alma <strong>YOK</strong></li>
+        <li>❌ Çip, jeton veya sanal para <strong>YOK</strong></li>
+        <li>❌ Bahis veya kumar mekaniği <strong>YOK</strong></li>
+        <li>❌ Gerçek para karşılığı hiçbir öğe <strong>YOK</strong></li>
+        <li>❌ Premium üyelik <strong>YOK</strong></li>
+        <li>✅ Yalnızca <strong>XP (deneyim puanı)</strong> ile sıralama vardır</li>
+      </ul>
+      <p>XP hiçbir oyun avantajı sağlamaz — sadece sıralama göstergesidir.</p>
+
+      <h3>2.3. Kullanıcı Adı Kuralları</h3>
+      <p>Kullanıcılar profil oluştururken kendi seçtikleri bir kullanıcı adı belirler. Kullanıcı adları:</p>
+      <ul>
+        <li>Türkçe + İngilizce <strong>küfür filtresinden</strong> geçirilir</li>
+        <li><strong>L33t-speak</strong> normalize edilir (sayı/sembol dönüşümü)</li>
+        <li>Çocuk güvenliği için <strong>sıfır tolerans</strong> anahtar kelimeler engellenir</li>
+        <li>Uygunsuz kullanıcı adları <a href="mailto:gamedayama@gmail.com">gamedayama@gmail.com</a> adresine bildirilebilir</li>
+      </ul>
+
+      <h3>2.4. Yasak Davranışlar</h3>
+      <ul>
+        <li>Hile yazılımı, modifiye edilmiş istemci kullanımı</li>
+        <li>Otomatik bot kullanımı</li>
+        <li>Hesap paylaşımı veya satışı</li>
+        <li>Ağa zarar verecek DDoS/spam davranışı</li>
+      </ul>
+      <p>İhlal durumunda hesap kalıcı olarak askıya alınabilir.</p>
+
+      <h3>2.5. Hizmet Değişiklikleri</h3>
+      <p>Geliştirici, uygulamayı önceden bildirim yaparak veya yapmayarak güncelleyebilir, değiştirebilir veya hizmeti durdurabilir.</p>
+
+      <h3>2.6. Sorumluluk Reddi</h3>
+      <p>Uygulama "olduğu gibi" sunulur. Geliştirici, oyunun kesintisiz veya hatasız çalışacağını garanti etmez. Oyunun kullanımından doğacak doğrudan veya dolaylı zararlardan geliştirici sorumlu değildir.</p>
+    </section>
+
+    <section class="section" id="sorumlu">
+      <h2><span class="section-number">3</span> Sorumlu Oyun</h2>
+      <p>Dayama Okey eğlence amaçlı bir oyundur. Sağlıklı oyun deneyimi için:</p>
+
+      <ul>
+        <li><strong>Mola verin:</strong> Uzun süreli oyun göz, boyun ve sırt rahatsızlıklarına yol açabilir. Düzenli ara verin.</li>
+        <li><strong>Aşırı oynama:</strong> Oyun bağımlılığı ciddi bir sorundur. Hayatınızı olumsuz etkiliyorsa profesyonel destek alın.</li>
+        <li><strong>Yaş sınırı:</strong> 13 yaş altı kullanıcılar için uygun değildir.</li>
+      </ul>
+
+      <div class="info-box">
+        <strong>Yardım Hatları:</strong>
+        <ul style="margin-top: 8px;">
+          <li><strong>Yeşilay:</strong> 115 (Türkiye — ücretsiz destek hattı)</li>
+          <li><strong>Sağlık Bakanlığı:</strong> 191</li>
+          <li><strong>Web:</strong> <a href="https://yesilay.org.tr" target="_blank" rel="noopener">yesilay.org.tr</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="silme">
+      <h2><span class="section-number">4</span> Hesap Silme Hakkı</h2>
+      <p>KVKK Madde 7 ve GDPR Article 17 gereği, hesabınızı tamamen silme hakkına sahipsiniz.</p>
+
+      <h3>4.1. Uygulama İçinden Silme (Önerilen)</h3>
+      <ol>
+        <li>Uygulamayı açın</li>
+        <li>Ayarlar (⚙️) → <strong>Hesabımı Sil</strong></li>
+        <li>Onaylayın</li>
+      </ol>
+
+      <p>Hesabınız ve tüm verileriniz <strong>anında</strong> silinir:</p>
+      <ul>
+        <li>Yerel profil ve istatistikler</li>
+        <li>Firebase global sıralama kaydı</li>
+        <li>Firebase Anonim kimlik (UID)</li>
+        <li>XP ve seviye bilgileri</li>
+      </ul>
+
+      <h3>4.2. Manuel Silme Talebi</h3>
+      <p>Uygulama içi yöntem kullanamıyorsanız:</p>
+
+      <div class="contact-card">
+        <div class="contact-row">
+          <div class="contact-icon">✉</div>
+          <div>
+            <div class="contact-label">E-posta</div>
+            <div class="contact-value">gamedayama@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">📋</div>
+          <div>
+            <div class="contact-label">Konu</div>
+            <div class="contact-value">"Hesap Silme Talebi"</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">👤</div>
+          <div>
+            <div class="contact-label">İçerik</div>
+            <div class="contact-value">Oyun içi kullanıcı adınız</div>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top: 16px;">Talepleriniz <strong>en geç 30 gün içinde</strong> işleme alınır.</p>
+
+      <h3>4.3. Silme Sonrası</h3>
+      <ul>
+        <li>Verileriniz sistemlerimizden kalıcı olarak silinir.</li>
+        <li>Yedeklerden silme <strong>90 gün içinde</strong> tamamlanır (KVKK uyumlu yedek rotasyonu).</li>
+        <li>Silme talebinizden sonra aynı cihazla yeni hesap açabilirsiniz, ancak eski hesabınızla bağlantısı olmaz.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="iletisim">
+      <h2><span class="section-number">5</span> İletişim</h2>
+      <p>Tüm yasal sorular, KVKK talepleri, hesap silme istekleri ve genel destek için:</p>
+
+      <div class="contact-card">
+        <div class="contact-row">
+          <div class="contact-icon">✉</div>
+          <div>
+            <div class="contact-label">E-posta</div>
+            <div class="contact-value">gamedayama@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">⏱</div>
+          <div>
+            <div class="contact-label">Yanıt Süresi</div>
+            <div class="contact-value">24-72 saat (hafta içi)</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">⚖</div>
+          <div>
+            <div class="contact-label">KVKK/GDPR Talepleri</div>
+            <div class="contact-value">30 gün içinde resmi yanıt</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">🏢</div>
+          <div>
+            <div class="contact-label">Yayıncı</div>
+            <div class="contact-value">Serkan Kaval (Dayama Games)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</div>
+<!-- ========== / TÜRKÇE ========== -->
+
+
+<!-- ========== ENGLISH ========== -->
+<div data-lang="en">
+
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Legal Documents</h1>
+    <p>Privacy Policy, Terms of Use, and Responsible Gaming</p>
+    <div class="hero-meta">Last updated: July 2, 2026</div>
+  </div>
+</section>
+
+<div class="notice">
+  <div class="notice-box">
+    <div class="notice-icon">✓</div>
+    <div class="notice-content">
+      <h3>Free App — No Gambling Mechanics</h3>
+      <p>Dayama Okey is a free entertainment game. There are no real money, virtual chips, or betting mechanics at any point in the game. Progression is based solely on <strong>XP (experience points)</strong> — no monetary rewards or cash prizes.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <aside class="toc">
+    <div class="toc-title">Contents</div>
+    <ul class="toc-list">
+      <li><a href="#privacy" class="toc-link">1. Privacy Policy</a></li>
+      <li><a href="#terms" class="toc-link">2. Terms of Use</a></li>
+      <li><a href="#responsible" class="toc-link">3. Responsible Gaming</a></li>
+      <li><a href="#delete" class="toc-link">4. Account Deletion</a></li>
+      <li><a href="#contact" class="toc-link">5. Contact</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+
+    <section class="section" id="privacy">
+      <h2><span class="section-number">1</span> Privacy Policy (KVKK & GDPR)</h2>
+      <p>This app processes your personal data in accordance with the <strong>Turkish Personal Data Protection Law (KVKK No. 6698)</strong> and the EU <strong>General Data Protection Regulation (GDPR)</strong>.</p>
+
+      <h3>1.1. Data Controller</h3>
+      <p><strong>Data controller:</strong> Serkan Kaval (individual developer)<br>
+      <strong>Contact:</strong> <a href="mailto:gamedayama@gmail.com">gamedayama@gmail.com</a></p>
+
+      <h3>1.2. Data We Collect</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Data Type</th><th>Purpose</th><th>Retention</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Username (nickname)</td><td>In-game identity, leaderboard</td><td>Until account deletion</td></tr>
+            <tr><td>Avatar selection</td><td>Visual identity</td><td>Until account deletion</td></tr>
+            <tr><td>Month and year of birth</td><td>13+ age verification (COPPA/KVKK/GDPR)</td><td>Not stored after check</td></tr>
+            <tr><td>Firebase Anonymous UID</td><td>User identification, leaderboard</td><td>Until account deletion</td></tr>
+            <tr><td>XP and level</td><td>Ranking system</td><td>Until account deletion</td></tr>
+            <tr><td>Game statistics</td><td>Profile display</td><td>Until account deletion</td></tr>
+            <tr><td>Advertising ID (IDFA/GAID)</td><td>AdMob advertising</td><td>With ATT/UMP consent</td></tr>
+            <tr><td>Crash and performance data</td><td>Bug tracking, improvement</td><td>90 days (anonymous)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-box success">
+        <strong>Data We DO NOT Collect:</strong> Real name, national ID, email, phone number, physical address, banking/card info, photos, location, contacts, health data, biometric data.
+      </div>
+
+      <h3>1.3. Purposes of Processing</h3>
+      <ul>
+        <li>Providing game services (4-player Turkish Okey "Dayama" variant)</li>
+        <li>Online multiplayer matchmaking (Photon PUN 2)</li>
+        <li>Global leaderboard (Firebase Firestore)</li>
+        <li>Anti-cheat and fraud prevention</li>
+        <li>Profanity filter for usernames</li>
+        <li>Compliance with legal obligations (KVKK, GDPR, Apple/Google policies)</li>
+        <li>Ad delivery and measurement (Google AdMob — subject to ATT/UMP consent)</li>
+      </ul>
+
+      <h3>1.4. No User-to-User Communication</h3>
+      <div class="info-box">
+        The app <strong>does NOT include any chat, messaging, or user-to-user communication</strong>. Interaction is limited strictly to in-game tile actions.
+      </div>
+
+      <h3>1.5. Data Transfer (Domestic and International)</h3>
+      <ul>
+        <li><strong>Photon Engine</strong> (Germany/EU): Anonymous UID and nickname for matchmaking. Within EU, GDPR compliant.</li>
+        <li><strong>Firebase Firestore</strong> (EU region): Anonymous UID, nickname, XP for leaderboard. GDPR compliant.</li>
+        <li><strong>Google AdMob</strong> (USA — under SCCs): Advertising ID for ad delivery. No personalized data transferred if ATT/UMP declined.</li>
+        <li><strong>Firebase Authentication</strong> (EU region): Anonymous identity generation.</li>
+        <li><strong>Firebase Crashlytics</strong>: Anonymous crash reports.</li>
+      </ul>
+
+      <h3>1.6. Data Security</h3>
+      <ul>
+        <li>Local device data is encrypted with <strong>AES + HMAC</strong> (SecurePrefs).</li>
+        <li>Firebase Firestore Security Rules prevent unauthorized access.</li>
+        <li>Photon communication uses encrypted channels.</li>
+        <li>All network traffic uses <strong>HTTPS/TLS</strong>.</li>
+      </ul>
+
+      <h3>1.7. Your Rights (KVKK Art. 11 / GDPR Art. 15-22)</h3>
+      <p>You have the following rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Right to access:</strong> Request information about your processed data.</li>
+        <li><strong>Right to rectification:</strong> Correct incomplete or inaccurate data.</li>
+        <li><strong>Right to erasure:</strong> Delete your account (see <a href="#delete">Account Deletion</a>).</li>
+        <li><strong>Right to object:</strong> Apply via gamedayama@gmail.com.</li>
+        <li><strong>Right to complain:</strong> File complaints with KVKK Authority (<a href="https://www.kvkk.gov.tr" target="_blank" rel="noopener">kvkk.gov.tr</a>) or your local EU Data Protection Authority.</li>
+      </ul>
+      <p>Requests are answered <strong>within 30 days</strong> free of charge.</p>
+    </section>
+
+    <section class="section" id="terms">
+      <h2><span class="section-number">2</span> Terms of Use</h2>
+
+      <h3>2.1. Age Limit</h3>
+      <div class="info-box warning">
+        This app is intended for users <strong>13 years and older</strong>. The age limit exists for data protection compliance (KVKK/COPPA/GDPR). The game content itself is suitable for all ages.
+      </div>
+
+      <h3>2.2. Free App — No Gambling</h3>
+      <p>Dayama Okey is completely free. The app contains:</p>
+      <ul>
+        <li>❌ <strong>NO</strong> in-app purchases</li>
+        <li>❌ <strong>NO</strong> chips, coins, or virtual currency</li>
+        <li>❌ <strong>NO</strong> betting or gambling mechanics</li>
+        <li>❌ <strong>NO</strong> items purchasable with real money</li>
+        <li>❌ <strong>NO</strong> premium membership</li>
+        <li>✅ Only <strong>XP (experience points)</strong> for ranking</li>
+      </ul>
+      <p>XP provides no gameplay advantage — it is purely a ranking indicator.</p>
+
+      <h3>2.3. Username Rules</h3>
+      <p>Users select their own username when creating a profile. Usernames:</p>
+      <ul>
+        <li>Pass through a bilingual (Turkish + English) <strong>profanity filter</strong></li>
+        <li>Are normalized against <strong>L33t-speak</strong> (number/symbol substitution)</li>
+        <li>Are checked against <strong>zero-tolerance</strong> child safety keywords</li>
+        <li>Inappropriate usernames can be reported to <a href="mailto:gamedayama@gmail.com">gamedayama@gmail.com</a></li>
+      </ul>
+
+      <h3>2.4. Prohibited Behavior</h3>
+      <ul>
+        <li>Cheating software, modified clients</li>
+        <li>Automated bots</li>
+        <li>Account sharing or sale</li>
+        <li>DDoS/spam attacks on the network</li>
+      </ul>
+      <p>Violations may result in permanent account suspension.</p>
+
+      <h3>2.5. Service Changes</h3>
+      <p>The developer may update, modify, or discontinue the app with or without notice.</p>
+
+      <h3>2.6. Disclaimer</h3>
+      <p>The app is provided "as is". The developer does not guarantee uninterrupted or error-free operation. The developer is not liable for any direct or indirect damages resulting from use of the app.</p>
+    </section>
+
+    <section class="section" id="responsible">
+      <h2><span class="section-number">3</span> Responsible Gaming</h2>
+      <p>Dayama Okey is designed for entertainment. For a healthy gaming experience:</p>
+
+      <ul>
+        <li><strong>Take breaks:</strong> Extended gameplay may cause eye, neck, and back strain. Take regular breaks.</li>
+        <li><strong>Avoid excessive play:</strong> Gaming addiction is a serious issue. Seek professional help if it negatively affects your life.</li>
+        <li><strong>Age limit:</strong> Not suitable for users under 13.</li>
+      </ul>
+
+      <div class="info-box">
+        <strong>Help Lines:</strong>
+        <ul style="margin-top: 8px;">
+          <li><strong>Yeşilay (Turkey):</strong> 115 (free support)</li>
+          <li><strong>Ministry of Health (Turkey):</strong> 191</li>
+          <li><strong>Web:</strong> <a href="https://yesilay.org.tr" target="_blank" rel="noopener">yesilay.org.tr</a></li>
+          <li><strong>EU:</strong> Contact your local mental health services</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="delete">
+      <h2><span class="section-number">4</span> Account Deletion</h2>
+      <p>Under KVKK Art. 7 and GDPR Art. 17, you have the right to completely delete your account.</p>
+
+      <h3>4.1. Delete from Within the App (Recommended)</h3>
+      <ol>
+        <li>Open the app</li>
+        <li>Settings (⚙️) → <strong>Delete My Account</strong></li>
+        <li>Confirm</li>
+      </ol>
+
+      <p>Your account and all data are deleted <strong>immediately</strong>:</p>
+      <ul>
+        <li>Local profile and statistics</li>
+        <li>Firebase global leaderboard entry</li>
+        <li>Firebase Anonymous identity (UID)</li>
+        <li>XP and level information</li>
+      </ul>
+
+      <h3>4.2. Manual Deletion Request</h3>
+      <p>If you cannot use the in-app method:</p>
+
+      <div class="contact-card">
+        <div class="contact-row">
+          <div class="contact-icon">✉</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">gamedayama@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">📋</div>
+          <div>
+            <div class="contact-label">Subject</div>
+            <div class="contact-value">"Account Deletion Request"</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">👤</div>
+          <div>
+            <div class="contact-label">Content</div>
+            <div class="contact-value">Your in-game username</div>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top: 16px;">Requests are processed <strong>within 30 days</strong>.</p>
+
+      <h3>4.3. After Deletion</h3>
+      <ul>
+        <li>Your data is permanently deleted from our systems.</li>
+        <li>Deletion from backups completes <strong>within 90 days</strong> (KVKK-compliant backup rotation).</li>
+        <li>You can create a new account on the same device after deletion, but it will have no link to your old account.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="contact">
+      <h2><span class="section-number">5</span> Contact</h2>
+      <p>For all legal questions, KVKK/GDPR requests, account deletion, and general support:</p>
+
+      <div class="contact-card">
+        <div class="contact-row">
+          <div class="contact-icon">✉</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">gamedayama@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">⏱</div>
+          <div>
+            <div class="contact-label">Response Time</div>
+            <div class="contact-value">24-72 hours (weekdays)</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">⚖</div>
+          <div>
+            <div class="contact-label">KVKK/GDPR Requests</div>
+            <div class="contact-value">Official response within 30 days</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">🏢</div>
+          <div>
+            <div class="contact-label">Publisher</div>
+            <div class="contact-value">Serkan Kaval (Dayama Games)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</div>
+<!-- ========== / ENGLISH ========== -->
+
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">Dayama Okey</div>
+    <p data-lang="tr">© 2026 Serkan Kaval — Dayama Games. Tüm hakları saklıdır.</p>
+    <p data-lang="en">© 2026 Serkan Kaval — Dayama Games. All rights reserved.</p>
+    <p data-lang="tr">Bu metin son olarak 2 Temmuz 2026 tarihinde güncellenmiştir.</p>
+    <p data-lang="en">This document was last updated on July 2, 2026.</p>
+    <div class="footer-links">
+      <a href="mailto:gamedayama@gmail.com">gamedayama@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function() {
+  var root = document.documentElement;
+  var btns = document.querySelectorAll('[data-set-lang]');
+  var saved = localStorage.getItem('dayama-lang') || navigator.language.slice(0,2);
+  var initial = (saved === 'en') ? 'en' : 'tr';
+
+  function setLang(lang) {
+    root.classList.remove('lang-tr', 'lang-en');
+    root.classList.add('lang-' + lang);
+    root.setAttribute('lang', lang);
+    document.querySelectorAll('[data-lang]').forEach(function(el) {
+      el.classList.toggle('active', el.getAttribute('data-lang') === lang);
+    });
+    btns.forEach(function(b) {
+      b.classList.toggle('active', b.getAttribute('data-set-lang') === lang);
+    });
+    localStorage.setItem('dayama-lang', lang);
+    document.title = (lang === 'en')
+      ? 'Dayama Okey — Legal Documents'
+      : 'Dayama Okey — Yasal Metinler';
+  }
+
+  btns.forEach(function(b) {
+    b.addEventListener('click', function() {
+      setLang(b.getAttribute('data-set-lang'));
+    });
+  });
+
+  setLang(initial);
+
+  // TOC scroll spy
+  var links = document.querySelectorAll('.toc-link');
+  var sections = document.querySelectorAll('.section');
+  function onScroll() {
+    var scrollY = window.scrollY + 120;
+    var current = '';
+    sections.forEach(function(s) {
+      if (s.offsetTop <= scrollY) current = s.id;
+    });
+    links.forEach(function(l) {
+      l.classList.toggle('active', l.getAttribute('href') === '#' + current);
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+
+</body>
+</html>
